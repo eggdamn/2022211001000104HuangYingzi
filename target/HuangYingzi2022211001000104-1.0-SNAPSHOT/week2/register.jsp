@@ -13,15 +13,15 @@
     <title>register</title>
 </head>
 <body>
-<form method="post">
+<form method="post" action="/2022211001000104HuangYingzi/register"><!-- within doPost() in servlet-->
     <h3>New User Registration</h3>
-    Username:<input type="text" placeholder="Username"><br>
-    Password:<input type="password" placeholder="password"><br>
-    Email:<input type="email" placeholder="Email"><br>
-    Gender
-    <input type="checkbox" name="checkbox" id="man">Male
-    <input type="checkbox" name="checkbox" id="woman">Female<br>
-    <input type="date" placeholder="Date of Birth(yyy-mm-dd)"><br>
+    Username:<input type="text" name="username"><br>
+    Password:<input type="password" name="password"><br>
+    Email:<input type="email" name="Email"><br>
+    Gender:
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female<br>
+    Date of birth:<input type="text" name="birthDate"><br>
     <input type="submit" value="Register">
 </form>
 </body>
